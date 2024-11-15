@@ -6,7 +6,7 @@ Mi tienda E-Commerce "Clothing for Women"
 
 Patricia Kibysz
 
-## Descripció General
+## Descripción General
 
 En la construcción general del sitio utilicé etiquetas semánticas para la estrucutra: header, nav, main, section y footer.
 Y además apliqué estilos con CSS; incluyendo Google Fonts.
