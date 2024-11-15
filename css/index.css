@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+#logo-cabecera{
+    height: 60px;
+    margin: .5rem;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: #003C43;
+}
+
+/*----------Estilos del menu--------------*/
+
+.menu {
+    background-color: #D4A373;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+.menu ul{
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 .7rem;
+}
+
+.menu li a {
+    color: #063338;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .85rem;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #7a5e42;
+    color: #E3FEF7 ;
+}
+
+/*----------Estilos del body--------------*/
+
+body{
+    background-color: #FEFAE0;
+    opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #FEFAE0 12px ), repeating-linear-gradient( #FAEDCD55, #FAEDCD );
+}
+
+main{
+    color: #003C43;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+h2{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-productos{
+    max-width: 200px;
+}
+
+.producto{
+    margin: .5rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: .8rem;
+}
+
+.producto h3{
+    padding: .5rem;
+    padding-bottom: 0;
+}
+.producto p{
+    padding: .5rem;
+}
+
+p{
+    font-size: .9rem;
+    padding-top: .5rem;
+}
+
+.resenias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 2px;
+    align-items: flex-start;
+    padding: 15px 15px 15px;
+    justify-content: space-between;
+}
+
+.resenia{
+    align-content: center;
+    margin: 2px;
+    padding: 15px 15px 15px;
+    border-style: outset;
+    border-radius: 6px;
+    color: #003C43;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.iframe{
+    display: flex;
+    justify-content: center;
+    margin: .75rem;
+}
+
+/*----------Estilos del footer--------------*/
+
+.pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .5rem;
+    background-color: #D4A373;
+    color: #003C43;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.logo_footer {
+    justify-content: left;
+}
+
+.copy{
+    justify-content: left;
+    font-size: .9rem;
+}
+
+.pie img {
+    height: 45px;
+    padding: .5rem;
+}
+
+.iconos {
+    display: flex;
+    column-gap: .5rem;
+}
+
+.iconos a {
+    color: #003C43;
+    font-size: 1.2rem;
+}
+
+/*----------Estilos del contenedor tamaño medio--------------*/
+
+@media (min-width: 720px) {
+    
+    .encabezado{
+        font-size: 2rem;
+    }
+
+    #logo-cabecera{
+        height: 80px;
+        margin: .5rem;
+    }
+    
+    .menu ul li {
+        margin: .3rem 1.9rem;
+    }
+    
+    .menu li a {
+        font-size: 1.2rem;
+    }
+
+    h2{
+        font-size: 1.7rem;
+    }
+
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .img-productos {
+        max-width: 250px;
+    }
+
+    .producto {
+        margin: .5rem;
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .resenias{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .pie {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+
+    .copy{
+        justify-content: left;
+        font-size: 1rem;
+    }
+    
+    .pie img {
+        height: 50px;
+    }
+    
+    .iconos {
+        display: flex;
+        column-gap: .7rem;
+        margin-right: 1rem;
+    }
+    
+    .iconos a {
+        font-size: 1.4rem;
+    }
+}
+
+/*----------Estilos del contenedor tamaño grande--------------*/
+
+@media (min-width: 1200px) {
+
+    .encabezado{
+        font-size: 3rem;
+    }
+
+    #logo-cabecera{
+        height: 110px;
+        margin: .5rem;
+    }
+    
+    .menu ul li {
+        margin: .3rem 3.5rem;
+    }
+    
+    .menu li a {
+        font-size: 1.3rem;
+    }
+
+    h2{
+        font-size: 1.9rem;
+    }
+
+    .img-productos {
+        max-width: 400px;
+    }
+
+    .resenias{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        padding: 15px 15px 15px;
+        justify-content: space-between;
+    }
+
+    .copy{
+        font-size: 1.2rem;
+    }
+    
+    .pie img {
+        height: 70px;
+        margin-left: 2rem;
+    }
+    
+    .iconos {
+        column-gap: 1rem;
+    }
+    
+    .iconos a {
+        font-size: 1.5rem;
+    }
+}

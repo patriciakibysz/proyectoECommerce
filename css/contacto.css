@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    min-width: 100vw;
+    display: block;
+}
+
+.form {
+    background-color: rgba(212, 163, 115, .85);
+    margin: 1rem auto;
+    max-width: 60vw;
+    padding: 2rem 2rem 3rem 2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form_container {
+    margin-top: .8rem;
+    display: grid;
+    gap: .3rem;
+}
+
+textarea{
+    font-family: "Roboto", sans-serif;
+}
+
+.tyc{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*----------Estilos del contenedor tamaño medio--------------*/
+
+@media (min-width: 720px) {
+
+    .form {
+        max-width: 40vw;
+        font-size: 1.1rem;
+    }
+
+    .form_container {
+        gap: .5rem;
+    }
+
+    .entrada {
+        font-size: 1rem;
+    }
+
+    .boton {
+        font-size: 1rem;
+    }
+}
+
+/*----------Estilos del contenedor tamaño grande--------------*/
+
+@media (min-width: 1200px) {
+    
+    .form {
+        font-size: 1.3rem;
+    }
+
+    .form_container {
+        margin-top: 1.8rem;
+        gap: .6rem;
+    }
+
+    .entrada {
+        font-size: 1.2rem;
+    }
+
+    .boton {
+        font-size: 1.2rem;
+    }
+}
