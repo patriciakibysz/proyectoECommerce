@@ -10,7 +10,7 @@ Patricia Kibysz
 
 En la construcción general del sitio utilicé etiquetas semánticas para la estrucutra: header, nav, main, section y footer.
 Y además apliqué estilos con CSS; incluyendo Google Fonts.
-También apliqué Media Queries a todo el sitio (aunque debo reconocer que me quedó un scroll horizontal que no he podido detectar por qué aparece. Lo solucionaré luego).
+También apliqué Media Queries a todo el sitio.
 
 ## Secciones 
 
